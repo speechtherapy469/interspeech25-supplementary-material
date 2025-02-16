@@ -14,8 +14,8 @@ Each example consists of an image and an audio file:
 ![Confusion Matrix](classification.png)
 
 ### 2.2 Exact Error Matches
-![Error Match 1](error_match1.png)
-![Error Match 2](error_match2.png)
+![Error Match 1](exacterror1.png)
+![Error Match 2](exacterror2.png)
 
 ---
 
