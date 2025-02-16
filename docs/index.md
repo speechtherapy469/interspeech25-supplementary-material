@@ -12,13 +12,13 @@
 Each example consists of the therapist's annotation file screenshot for a particular mispronunciation label in an audio file, and the corresponding audio snippet:
 <table style="width:100%; text-align:center;">
 <tr>
-<td style="width:50%;"><img src="example1.png" alt="Example 1" style="width:100%;"></td>
+<td style="width:50%;"><img src="example3.png" alt="Example 1" style="width:100%;"></td>
 <td style="width:50%;"><img src="example2.png" alt="Example 2" style="width:100%;"></td>
 </tr>
 <tr>
 <td>
 <audio controls>
-<source src="example1.mp3" type="audio/mpeg">
+<source src="example3.mp3" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
 </td>
