@@ -3,10 +3,10 @@
 
 ## 1. Examples from our dataset
 Each example consists of an image and an audio file:
-<table>
+<table style="width:100%; text-align:center;">
 <tr>
-<td><img src="example1.png" alt="Example 1" width="45%"></td>
-<td><img src="example2.png" alt="Example 2" width="45%"></td>
+<td style="width:50%;"><img src="example1.png" alt="Example 1" style="width:100%;"></td>
+<td style="width:50%;"><img src="example2.png" alt="Example 2" style="width:100%;"></td>
 </tr>
 <tr>
 <td>
