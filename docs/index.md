@@ -3,8 +3,8 @@
 
 ## 1. Examples from our dataset
 Each example consists of an image and an audio file:
-- ![Example 1](example1.png) [🔊 Example 1 Audio](example1.wav)
-- ![Example 2](example2.png) [🔊 Example 2 Audio](example2.wav)
+- ![Example 1](example1.png) [🔊 Example 1 Audio](example1.mp3)
+- ![Example 2](example2.png) [🔊 Example 2 Audio](example2.mp3)
 
 ---
 
