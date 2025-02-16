@@ -9,7 +9,7 @@
 3. [Prompting Strategy to Convert Therapist's Descriptive Error Labels to Mispronunciation Classes](#3-section-21-prompting-strategy-to-convert-therapists-descriptive-error-labels-to-mispronunciation-classes)
 
 ## 1. Examples from our dataset
-Each example consists of the therapist's annotation file screenshot for a particular mispronunciation label in an audio file, and the corresponding audio snippet:
+Each example consists of the therapist's annotation file screenshot for a particular mispronunciation label in an audio file, and the corresponding audio snippet. The error localized and classified by an ASR is also shown.
 <table style="width:100%; text-align:center;">
 <tr>
 <td style="width:50%;"><img src="example3.png" alt="Example 1" style="width:100%;"></td>
