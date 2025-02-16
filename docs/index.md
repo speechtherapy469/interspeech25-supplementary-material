@@ -43,7 +43,7 @@ Your browser does not support the audio element.
 
 ## 3. (Section 2.1) Prompting Strategy to Convert Therapist's Descriptive Error Labels to Mispronunciation Classes
 
-```python
+```plaintext
 prompt = f"""
 You are a world-class Speech-Language Pathologist specializing in speech disorder classification and ASR (Automatic Speech Recognition) error analysis. Your task is to categorize the given speech error label into one of the predefined categories with high accuracy.
 
@@ -101,3 +101,4 @@ You are a world-class Speech-Language Pathologist specializing in speech disorde
   `Substitution Errors`, `Deletion Errors`, `Insertion Errors`, `Repetition Errors`, or `Prosodic Errors`.  
 - **Do NOT include explanations, reasoning, or additional text.**
 """
+```
