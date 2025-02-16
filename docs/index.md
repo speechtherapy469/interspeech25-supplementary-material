@@ -2,7 +2,7 @@
 ### Submitted to Interspeech 2025
 
 ## 1. Examples from our dataset
-Each example consists of an image and an audio file:
+Each example consists of the therapist's annotation file screenshot for a particular mispronunciation label in an audio file, and the corresponding audio snippet:
 <table style="width:100%; text-align:center;">
 <tr>
 <td style="width:50%;"><img src="example1.png" alt="Example 1" style="width:100%;"></td>
@@ -43,7 +43,7 @@ Your browser does not support the audio element.
 
 ## 3. (Section 2.1) Prompting Strategy to Convert Therapist's Descriptive Error Labels to Mispronunciation Classes
 
-```plaintext
+```python
 prompt = f"""
 You are a world-class Speech-Language Pathologist specializing in speech disorder classification and ASR (Automatic Speech Recognition) error analysis. Your task is to categorize the given speech error label into one of the predefined categories with high accuracy.
 
