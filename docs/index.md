@@ -3,10 +3,10 @@
 
 ## Table of Contents  
 1. [Examples from our dataset](#1-examples-from-our-dataset)  
-2. [Mispronunciation Classification](#2-mispronunciation-classification)  
+2. [Mispronunciation Classification](#2-(Section-4-5)-mispronunciation-classification)  
    - 2.1 [ASR-wise Class Confusion Matrices](#21-asr-wise-class-confusion-matrices)  
    - 2.2 [Exact Error Matches](#22-exact-error-matches)  
-3. [Prompting Strategy to Convert Therapist's Descriptive Error Labels to Mispronunciation Classes](#3-prompting-strategy-to-convert-therapists-descriptive-error-labels-to-mispronunciation-classes)
+3. [Prompting Strategy to Convert Therapist's Descriptive Error Labels to Mispronunciation Classes](#3-(Section-2-1)-prompting-strategy-to-convert-therapists-descriptive-error-labels-to-mispronunciation-classes)
 
 ## 1. Examples from our dataset
 Each example consists of the therapist's annotation file screenshot for a particular mispronunciation label in an audio file, and the corresponding audio snippet:
