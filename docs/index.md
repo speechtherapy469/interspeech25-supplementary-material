@@ -32,8 +32,12 @@ Your browser does not support the audio element.
 ![Confusion Matrix](classification.png)
 
 ### 2.2 Exact Error Matches
-![Error Match 1](exacterror1.png)
-![Error Match 2](exacterror2.png)
+<table style="width:100%; text-align:center;">
+<tr>
+<td style="width:50%;"><img src="exacterror1.png" alt="Error Match 1" style="width:100%;"></td>
+<td style="width:50%;"><img src="exacterror2.png" alt="Error Match 2" style="width:100%;"></td>
+</tr>
+</table>
 
 ---
 
