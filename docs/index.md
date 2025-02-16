@@ -3,8 +3,16 @@
 
 ## 1. Examples from our dataset
 Each example consists of an image and an audio file:
-- ![Example 1](example1.png) [🔊 Example 1 Audio](example1.mp3)
-- ![Example 2](example2.png) [🔊 Example 2 Audio](example2.mp3)
+- ![Example 1](example1.png)  
+  <audio controls>
+    <source src="example1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+- ![Example 2](example2.png)  
+  <audio controls>
+    <source src="example2.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 
 ---
 
