@@ -11,7 +11,7 @@ Each example consists of an image and an audio file:
 ## 2. (Section 4.5) Mispronunciation Classification
 
 ### 2.1 ASR-wise Class Confusion Matrices
-![Confusion Matrix](confusion_matrix.png)
+![Confusion Matrix](classification.png)
 
 ### 2.2 Exact Error Matches
 ![Error Match 1](error_match1.png)
