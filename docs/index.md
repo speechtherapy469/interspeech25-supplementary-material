@@ -36,7 +36,11 @@ Your browser does not support the audio element.
 ## 2. (Section 4.5) Mispronunciation Classification
 
 ### 2.1 ASR-wise Class Confusion Matrices
+Word-level
 ![Confusion Matrix](classification.png)
+
+Phone-level
+![Confusion Matrix](classification2.png)
 
 ### 2.2 Exact Error Matches
 <table style="width:100%; text-align:center;">
