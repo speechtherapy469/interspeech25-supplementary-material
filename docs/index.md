@@ -5,8 +5,9 @@
 1. [Examples from our dataset](#1-examples-from-our-dataset)  
 2. [Mispronunciation Classification](#2-section-45-mispronunciation-classification)
    - 2.1 [ASR-wise Class Confusion Matrices](#21-asr-wise-class-confusion-matrices)  
-   - 2.2 [Exact Error Matches](#22-exact-error-matches)  
-3. [Prompting Strategy to Convert Therapist's Descriptive Error Labels to Mispronunciation Classes](#3-section-21-prompting-strategy-to-convert-therapists-descriptive-error-labels-to-mispronunciation-classes)
+   - 2.2 [Exact Error Matches](#22-exact-error-matches)
+3. [Examples for Word/Phoneme Substitution, Deletion, Insertion from ASR](#3-section-3-examples-for-word-phoneme-substitution-deletion-insertion-from-asr)
+4. [Prompting Strategy to Convert Therapist's Descriptive Error Labels to Mispronunciation Classes](#4-section-21-prompting-strategy-to-convert-therapists-descriptive-error-labels-to-mispronunciation-classes)
 
 ## 1. Examples from our dataset
 Each example consists of the therapist's annotation file screenshot for a particular mispronunciation label in an audio file, and the corresponding audio snippet. The error localized and classified by an ASR is also shown.
@@ -51,8 +52,40 @@ Phone-level
 </table>
 
 ---
+## 3. (Section 3) Examples for Word/Phoneme Substitution, Deletion, Insertion from ASR
 
-## 3. (Section 2.1) Prompting Strategy to Convert Therapist's Descriptive Error Labels to Mispronunciation Classes
+### Rules
+- **Substitution-Word** → If edit distance > 3 **OR** relative distance > 0.6
+- **Substitution-Phoneme** → If edit distance ≤ 3 **AND** relative distance ≤ 0.6
+- **Insertion/Deletion-Phoneme** → If phoneme-level edit fits insertion/deletion patterns
+
+### Examples
+
+#### 1. Substitution-Word (Absolute Distance > 3)
+- **ASR:** `'RED'` → **Original:** `'RAINDROPS'`
+- **Phonemes:** `/ɹ ɛ d/` vs. `/ɹ eɪ n d ɹ ɑ p s/`
+- **Edit Distance = 4** → Word-Level
+
+#### 2. Substitution-Word (Relative Distance > 0.6)
+- **ASR:** `'PRINCE'` → **Original:** `'PRISM'`
+- **Edit Distance = 3, Relative = 0.75** → Word-Level
+
+#### 3. Substitution-Phoneme
+- **ASR:** `'SAY'` → **Original:** `'STAY'`
+- **Phonemes:** `/s eɪ/` vs. `/s t eɪ/`
+- **Edit Distance = 1, Relative = 0.33** → Phoneme-Level
+
+#### 4. Insertion-Phoneme
+- **ASR:** `'THEY'` → **Original:** `'THE'`
+- **Edit Distance = 1, Relative = 0.33** → Phoneme-Level
+
+#### 5. Deletion-Phoneme
+- **ASR:** `'FRIEND'` → **Original:** `'FRIENDS'`
+- **Missing final** `/z/`, **Edit Distance = 1, Relative = 0.2** → Phoneme-Level
+
+---
+
+## 4. (Section 2.1) Prompting Strategy to Convert Therapist's Descriptive Error Labels to Mispronunciation Classes
 
 ```plaintext
 prompt = f"""
